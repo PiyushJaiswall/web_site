@@ -1,29 +1,684 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<head>
+    <style>
+		body {
+			margin: 0;
+      padding: 0;
+		}
+    section {
+			margin: 60;
+			padding: 50;
+		}
+       
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	color: #1c1b1b;
+	background-color:#aac5ee;
+}
 
-<html lang=”en”>
 
-  <head>
+h1 {
+	font-family: "Cooper Black", Arial, sans-serif;
+	text-align: center;
+	font-size: 42px;
+	margin-bottom: 20px;
+	margin-top:20px;
+	font-weight: bold;
+	color: #2d0af5;
+}
 
-    <meta charset=”UTF-8″>
 
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+h3 {
+	font-family: "Cooper Black", Arial, sans-serif;
+	font-size: 24px;
+	margin-top: 30px;
+	color: #f31f1f;
+}
 
-    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
 
-    <title>website</title>
+ul {
+	list-style: disc;
+	margin-left: 20px;
+}
 
-  </head>
 
-  <body>
 
-    <main>
+li {
+	margin-bottom: 5px;
+}
 
-        <h1>Welcome to My Website [Name of the website]</h1>  
 
-        <p>This is my new website hosted on GitHub Pages!</p>
+b {
+	font-weight: bold;
+}
 
-    </main>
 
-  </body>
+title {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
 
-</html>
+
+
+h1:hover {
+	color: #ff9900;
+	cursor: pointer;
+}
+h1 {
+	text-align: center;
+	position: relative;
+  }
+  
+  h1::after {
+	content: "";
+	display: block;
+	width: 1260px;
+	height: 15px;
+	background-color: rgb(164, 214, 227);
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top:40px;
+  }
+
+
+
+  ol {
+	list-style-type: decimal; 
+	margin: 50px;
+  }
+  
+  pre {
+	margin-left: 150px;
+    margin-right: 150px;}
+.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(35, 158, 240); 
+    text-align: center;
+    line-height: 30px;
+    color: #FFF; 
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.black-box {
+	background-color: rgb(163, 219, 219);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	font-family: "Courier New", Courier, monospace;
+  }
+
+.dropbtn {
+	background-color: #e5e9dc;
+	color: black;
+	padding: 8px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  
+  .dropdown-content a {
+	color: black;
+	padding: 8px 12px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  .dropdown-content {
+	background-color: rgb(224, 245, 197);
+	color: white;
+  }
+  table {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+  
+  th, td {
+	border: 1px solid black;
+	padding: 5px;
+  }
+  
+  th {
+	background-color: #333;
+	color: white;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  pre.code-block {
+	background-color: #1E1E1E;
+	color: #D4D4D4;
+	padding: 5px;
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 1.5;
+	border-radius: 5px;
+	overflow-x: auto;
+  }
+  
+  pre.code-block b {
+	color: #FFFFFF;
+	font-weight: bold;
+  }
+  
+  pre.code-block .comment {
+	color: #9CDCFE;
+  }
+  pre.code-block1 {
+	background-color: #1E1E1E;
+	color: #D4D4D4;
+	padding: 5px;
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 1.5;
+	border-radius: 5px;
+	overflow-x: auto;
+  }
+  
+  pre.code-block b {
+	color: #FFFFFF;
+	font-weight: bold;
+  }
+  
+  pre.code-block .comment {
+	color: #9CDCFE;
+  }
+  .other-part {
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 8px 0;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown:hover + .other-part {
+	margin-top: 20px;
+  }
+  .circle-list {
+	list-style-type: none;
+	counter-reset: item;
+	padding: 0;
+  }
+  
+  .circle-list li {
+	counter-increment: item;
+	margin-bottom: 10px;
+	position: relative;
+  }
+  
+  .circle-list li:before {
+	content: counter(item);
+	background-color: #1a7ada;
+	border-radius: 50%;
+	color: #FFFFFF;
+	display: inline-block;
+	font-weight: bold;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	margin-right: 10px;
+	position: absolute;
+	left: -35px;
+  }
+
+  section {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	display: inline-block;
+	align-items: center;
+
+}
+  #Namespace_Management{
+	background-color: #F5F5F5 ;
+  }
+  
+  #Packages_Help_in {
+	background-color: #FFFFFF ;
+  }
+  
+  #Creating_Packages_In_Java{
+	background-color: #F0FFF0;
+  }
+ 
+#Package_Hierarchy{
+  background-color: #FAFAD2 ;
+}
+
+#Package_Finding_In_Java{
+  background-color: #F5FFFA ;
+}
+
+#Importing_Packages_In_Java{
+  background-color: #E0FFFF ;
+}
+
+#Access_Control_Of_Packages{
+  background-color: #f7e5e3 ;
+}
+
+#Built_In_Packages_In_Java{
+  background-color: #f1efdf;
+}
+
+#User_Defined_Packages{
+  background-color: #f5e3d4;
+}
+section:hover {
+	background-color: #ebebeb;
+}
+
+
+	</style></head>
+<h1 style="text-align: center;">
+    <title >
+        PACKAGES IN JAVA
+    </title>
+    PACKAGES IN JAVA
+</h1><br><br>
+<div class="dropdown">
+    <button class="dropbtn">Content</button>
+    <div class="dropdown-content">
+      <a href="#Namespace_Management">Namespace Management</a>
+      <a href="#Packages_Help_in">Packages Help in:</a>
+      <a href="#Creating_Packages_In_Java">Creating Packages In Java</a>
+      <a href="#Package_Hierarchy">Package Hierarchy</a>
+      <a href="#Package_Finding_In_Java">Package Finding In Java</a>
+      <a href="#Importing_Packages_In_Java">Importing Packages In Java</a>
+      <a href="#Access_Control_Of_Packages">Access Control Of Packages</a>
+      <a href="#Built_In_Packages_In_Java">Built In Packages In Java</a>
+      <a href="#User_Defined_Packages">User Defined Packages</a>
+    </div>
+  </div>
+  <div class="other-part">
+  
+<body>
+    <section id="Namespace_Management">
+<h3 style="text-align: center;">Namespace Management</h3>
+        <p><ul>
+            <li>Classes written so far all belong to a single name space: a unique name has to be chosen for each class to avoid name collision</li>
+            <li>Java provides a mechanism for partitioning the class namespace into more manageable chunks. <b>This mechanism is a package</b> i.e In Java, a package is a namespace that organizes a set of related classes and interfaces. It provides a way to group related classes and interfaces, making them easier to manage and maintain .</li>
+            </ul>
+        </p></section>
+    <section id="Packages_Help_in">
+<h3 style="color: rgb(8, 8, 8);">Packages Help in:</h3>
+        <p>
+         <ol class="circle-list">
+        <li><b>Avoiding naming conflicts:</b> By organizing classes and interfaces in packages, naming conflicts can be avoided.</li>
+        <li><b>Access control:</b> Packages allow for access control. You can specify which classes can access a particular package or class.</li>
+        <li><b>Code reuse:</b> Packages allow for code reuse. You can reuse classes and interfaces across different projects.</li>
+        <li><b>Modularity :</b> Packages provide a way to modularize code. By breaking code into smaller, more manageable packages, you can make it easier to understand and maintain.</li>
+        <li><b>Separation of concerns:</b> Packages allow for separation of concerns. You can separate your code into different packages based on functionality, making it easier to understand and modify.</li>
+    </ol>
+  </p></section>
+    <section id="Creating_Packages_In_Java">
+<h3 style="text-align: center; color: rgb(128, 9, 247);">Creating Packages In Java</h3>
+        <div class="container">
+         <p>
+        Creating a package in Java involves organizing related classes and interfaces into a single namespace to improve code organization and reduce naming conflicts.
+         <br><br>
+         Here are the steps involved in creating a package:
+         </p>
+        <ol class="circle-list">
+         <li>
+          Choose a package name. It is recommended to use a reverse domain name format for your package name to ensure uniqueness and prevent naming conflicts. For example, if your domain name is "example.com", you can use "com.example" as your package name.
+        </li>
+         <li>
+        Create a directory structure that corresponds to your package name. For example, if your package name is "com.example", you need to create a directory called "com" inside your project directory. Inside the "com" directory, create another directory called "example". Your directory structure should look like this:
+        <pre class="code-block">project/
+  └── com/
+      └── example/</pre>
+      </li>
+      <li>
+        Create your Java classes and interfaces. Save each class or interface in a separate file inside the appropriate directory. For example, if you have a class called "MyClass" in the "com.example" package, you would save it in a file called "MyClass.java" inside the "com/example" directory.
+      </li>
+      <li>
+        Add a package declaration at the beginning of your Java file to indicate that a class or interface belongs to a particular package. The package declaration should match the directory structure that you created earlier. For example, if you have a class called "MyClass" in the "com.example" package, you would include the following package declaration at the beginning of your Java file:
+        <pre class="code-block">package com.example;
+  
+  public class MyClass {
+    // class code here
+  }</pre>
+      </li>
+      <li>
+        Compile your Java code. To compile all the Java files in your package, navigate to the directory that contains the top-level package directory (in our example, the "com" directory), and use the "javac" command to compile all the files in the package:
+        <pre class="code-block">javac com/example/*.java</pre>
+        This command compiles all the Java files in the "com.example" package and generates class files for each file in the same directory.
+      </li>
+      <li>
+        Use your package. Once you have compiled your package, you can use it in your Java code by importing the package using the "import" statement. For example, if you have a class called "MyClass" in the "com.example" package, you would import it in another class as follows:
+        <pre class="code-block">import com.example.MyClass;
+  
+  public class MyOtherClass {
+    public static void main(String[] args){
+      MyClass myObject = new MyClass();
+      // use myObject here
+    }
+  }</pre>
+      </li>
+    </ol>
+  </div>
+  </section>
+    <section id="Package_Hierarchy">
+<h3 style="text-align: center; color: rgb(8, 8, 8);">Package Hierarchy</h3>
+        <p>Package hierarchy in Java is the way of organizing related packages into a tree-like structure where each package can contain sub-packages, and each sub-package can contain further sub-packages, creating a hierarchical structure of packages.<br><br>The top-level package in Java is the default package, which contains classes and interfaces with no package declaration. All other packages are organized hierarchically under this default package.<br><br><br> <b>For example, </b>consider a project that involves different packages like:
+            <pre class="code-block">
+                com.example
+                ├── app
+                │   ├── controller
+                │   ├── model
+                │   └── view
+                └── util
+                ├── encryption
+                └── logging</pre>
+                In this package hierarchy, the root package is com.example, which contains two sub-packages app and util. The app package has three sub-packages controller, model, and view. Similarly, the util package contains two sub-packages encryption and logging.<br>The benefit of organizing packages in a hierarchical structure is that it makes it easier to manage large codebases. By grouping related packages together, you can quickly locate and modify code. It also makes it easier to reuse code across multiple projects, as you can simply import the packages you need and use them in your code.<br><br>For instance, if you want to use the logging package in another project, you can import it by using the statement:<br><b>import com.example.util.logging;</b><br><br>This will give you access to all the classes and interfaces inside the logging package and its sub-packages.<br><br>In addition, package hierarchy also helps in avoiding naming conflicts between packages. When packages are organized hierarchically, each package has a unique namespace, which helps in avoiding naming conflicts between classes and interfaces.
+        </p></section>
+    <section id="Package_Finding_In_Java">
+<h3 style="text-align: center; color: rgb(5, 88, 16);">Package Finding In Java</h3>
+        <p>Package finding in Java is the process of locating and importing the necessary packages to use classes and interfaces in your code. When you want to use a class or interface that is defined in another package, you need to import that package into your code.<br>There are two ways to import a package in Java:<br>
+            <ol class="circle-list">
+                <li ><b>Using the fully qualified name of the class or interface:</b></li>You can use the fully qualified name of the class or interface, which includes the package name, to use it in your code. For example, if you want to use the ArrayList class from the java.util package, you can use the following code:<br><br><b><pre class="code-block">java.util.ArrayList myList = new java.util.ArrayList();</pre></b><br><br>In this case, you are using the fully qualified name of the ArrayList class, which includes the package name java.util. This is not an ideal approach because it can make your code harder to read and maintain, especially if you have to use a lot of classes and interfaces from different packages.</p>
+                <li ><b>Using the import statement:</b></li>The import statement is used to import a package or specific classes and interfaces from a package. This allows you to use the classes and interfaces in your code without using their fully qualified names.<br><b> For example,</b> to import the ArrayList class from the java.util package, you can use the following code:<br>
+                <pre class="code-block">
+                  import java.util.ArrayList;
+
+
+                  ...
+                  
+                  
+                  
+                  ArrayList myList = new ArrayList();
+                </pre><br><br>In this case, you are using the import statement to import the ArrayList class from the java.util package. This makes your code more readable and maintainable because you don't have to use the fully qualified name of the class every time you want to use it.<br>To import all the classes and interfaces in a package, you can use the wildcard character *. For example, to import all the classes and interfaces from the java.util package, you can use the following code:<br><br><pre class="code-block">import java.util.*;</pre><br><br>This imports all the classes and interfaces from the java.util package, which means you can use them in your code without using their fully qualified names.
+            </ol>
+        </p></section>
+    <section id="Importing_Packages_In_Java">    
+<h3 style="text-align: center; color: rgb(98, 4, 4);">Importing Packages In Java</h3>
+        <p>In Java, packages are used to organize related classes and interfaces, making it easier to manage and maintain large codebases. To use a class or interface from a different package, you need to import the necessary packages into your code. Importing packages in Java can be done in several ways.
+            <ol class="circle-list"><br>
+                    <li><b> Importing a Single Class</b></li>You can import a single class from a package using the following syntax:<br><br>
+                    <pre class="code-block">import package.name.ClassName;</pre><br><br><b>For example, </b>if you want to use the ArrayList class from the java.util package, you can import it using the following statement:<br><br><pre class="code-block">import java.util.ArrayList;</pre><br><br>After importing the class, you can create an instance of it using the following code:<br><br>
+                    <pre class="code-block">ArrayList<String> myList = new ArrayList<>();</pre><br><br>
+                    <li><b>Importing Multiple Classes from the Same Package</b></li><br>If you need to use multiple classes from the same package, you can import them all at once using the following syntax:<br><br>
+                    <pre class="code-block"> import package.name.*;</pre><br><br><b>For example,</b> if you want to use the ArrayList and LinkedList classes from the java.util package, you can import them using the following statement:<br><br>
+                    <pre class="code-block">import java.util.*;</pre><br><br>After importing the classes, you can create instances of them using the following code:<br><br>
+                    <pre class="code-block">ArrayList myList = new ArrayList<>();</pre><br><b> LinkedList<String> myLinkedList = new LinkedList<>();</b><br><br>        
+                    <li><b>Importing a Static Member</b></li><br>You can import a static member of a class using the following syntax:<br><br>
+                    <pre class="code-block">import static package.name.ClassName.staticMember;</pre><br><br><b> For example,</b> if you want to use the PI constant from the java.lang.Math class, you can import it using the following statement:<br><br>
+                    <pre class="code-block"> import static java.lang.Math.PI;</pre><br><br>After importing the constant, you can use it in your code directly:<br><br><br>double radius = 10.0;<br>double circumference = 2 * PI * radius;<br><br>  
+                    <li><b>Importing All Static Members</b></li><br>You can import all the static members of a class using the following syntax:<br><br>
+                    <pre class="code-block">import static package.name.ClassName.*;</pre> <br><br> <b> For example,</b>  if you want to use all the static members of the Math class from the java.lang package, you can import them using the following statement:<br><br>
+                    <pre class="code-block">   import static java.lang.Math.*;</pre> <br><br>After importing the static members, you can use them in your code directly:<br><br>double radius = 10.0;<br>double circumference = 2 * PI * radius;<br>double sineValue = sin(PI/2);
+            </ol>
+        </p></section>
+    <section id="Access_Control_Of_Packages">
+<h3 style="text-align: center; color: rgb(79, 34, 7);">Access Control Of Packages</h3>
+        <p>Access control in Java is the process of controlling the visibility and accessibility of members of a class. It allows you to specify who can access the members of a class and from where they can be accessed. This is important in object-oriented programming because it helps to encapsulate the implementation details of a class and protect it from unwanted modification or access.<br>  
+            <ol class="circle-list">
+            <br>In Java, there are four access control modifiers that can be used to control the accessibility of class members: private, default (package-private), protected, and public.<br><br>
+                    <li><b>private: </b></li>A private member is only accessible within the same class. It cannot be accessed from outside the class, even from its subclasses.<br><br>
+                    <li><b>default:</b></li> A member with no access modifier (also known as package-private) is only accessible within the same package. It cannot be accessed from outside the package, even from its subclasses.<br><br>
+                    <li><b>protected:</b></li> A protected member is accessible within the same package and also from its subclasses (even if they are in a different package).<br><br>
+                    <li><b>public: </b></li>A public member is accessible from anywhere in the program.<br><br>
+                            The table below summarizes the access level of class members based on their access modifiers:
+                            <table style="border: 1px solid black; border-collapse: collapse; margin: 0 auto;">
+                                    <tr>
+                                      <th style="border: 1px solid black; padding: 5px;">Access Modifier</th>
+                                      <th style="border: 1px solid black; padding: 5px;">Within class</th>
+                                      <th style="border: 1px solid black; padding: 5px;">Within package</th>
+                                      <th style="border: 1px solid black; padding: 5px;">Subclass in different package</th>
+                                      <th style="border: 1px solid black; padding: 5px;">Anywhere</th>
+                                    </tr>
+                                    <tr>
+                                      <td style="border: 1px solid black; padding: 5px;">Private</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">No</td>
+                                      <td style="border: 1px solid black; padding: 5px;">No</td>
+                                      <td style="border: 1px solid black; padding: 5px;">No</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border: 1px solid black; padding: 5px;">Default</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">No</td>
+                                      <td style="border: 1px solid black; padding: 5px;">No</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border: 1px solid black; padding: 5px;">Protected</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">No</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border: 1px solid black; padding: 5px;">Public</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                      <td style="border: 1px solid black; padding: 5px;">Yes</td>
+                                    </tr>
+                                  </table>
+                                  <br>
+                                  <br>
+        Here are some examples of how access control works in Java:
+                <br> // <b>Example 1:</b> private access modifier<br>
+                <pre class="code-block">
+                    public class MyClass {
+                    
+                        private int privateField;
+                    
+                        private void privateMethod() {
+                            // code here
+                        }
+                    
+                    }
+                                                        
+                        // The privateField and privateMethod cannot be accessed from outside the MyClas                                      
+                        // class, even from its subclasses.     
+                    </pre>                                  
+                <br><br><br><br>// <b>Example 2:</b> default access modifier                                      
+                <pre class="code-block">
+                    class MyClass {
+                        int defaultField;                                        
+                        void defaultMethod() {                                                
+                            // code here                                              
+                        }                                              
+                    }                                            
+                    
+                    // The defaultField and defaultMethod can be accessed within the same package,                                                
+                    // but not from outside the package.
+                    </pre>                                              
+                <br><br><br><br>//<b> Example 3:</b> protected access modifier                                                
+                <pre class="code-block">
+                    public class MyClass {                                                    
+                        protected int protectedField;                                                   
+                        protected void protectedMethod() {                                                        
+                            // code here                                                        
+                        }                                                        
+                    }                                                       
+                    // The protectedField and protectedMethod can be accessed within the same package                     
+                    // and also from its subclasses, even if they are in a different package.   
+                    </pre>                                                              
+                <br><br><br><br>// <b>Example 4:</b> public access modifier                                                        
+                <pre class="code-block">
+                    public class MyClass {
+                        public int publicField;
+                        
+                        public void publicMethod() {
+                            // code here
+                        }
+                    }
+                    // The publicField and publicMethod can be accessed from anywhere in the program.
+                    </pre></p></section>
+    <section id="Built_In_Packages_In_Java">               
+<h3 style="text-align: center; color: rgb(57, 6, 6);">Built In Packages In Java</h3>
+        <p>Java provides a large number of built-in packages that contain classes and interfaces for performing a wide range of tasks, from basic input/output operations to advanced networking and database connectivity. Here are some of the most commonly used built-in packages in Java:
+            <br><ol class="circle-list"><br>
+                    <li><b>java.lang package:</b></li><br>This package is automatically imported into every Java program and contains classes that are fundamental to the design of the Java language, such as Object, String, Math, and System.<br>
+                    <pre class="code-block1">
+                        import java.lang.*;
+                        
+                        public class MyClass {
+                           public static void main(String[] args) {
+                              String s = "Hello, world!";
+                              System.out.println(s);
+                           }
+                        }
+                        </pre>
+                    <li><b>java.util package:</b></li><br>This package contains classes that are useful for performing a variety of utility operations, such as working with collections, handling dates and times, and generating random numbers.<br>  
+                    <pre class="code-block">
+                        import java.util.*;
+                        
+                        public class MyClass {
+                            public static void main(String[] args) {
+                                List<String> list = new ArrayList<>();
+                                list.add("apple");
+                                list.add("banana");
+                                list.add("orange");
+                                System.out.println(list);
+                            }
+                        }
+                        </pre>
+                    <li><b>java.io package:</b></li><br>This package contains classes for performing input/output operations, such as reading and writing files and streams.<br>
+                    <pre class="code-block">
+                        import java.io.*;
+                        
+                        public class MyClass {
+                            public static void main(String[] args) {
+                                try {
+                                    FileInputStream fis = new FileInputStream("file.txt");
+                                    int c;
+                                    while ((c = fis.read()) != -1) {
+                                        System.out.print((char) c);
+                                    }
+                                    fis.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                        </pre>
+                    <li><b>java.net package:</b></li><br>This package contains classes for performing networking operations, such as connecting to remote hosts, sending and receiving data over sockets, and handling URLs.<br>
+                    <pre class="code-block">
+                        import java.net.*;
+                        public class MyClass {
+                          public static void main(String[] args) {
+                            try {
+                              URL url = new URL("http://www.example.com/");
+                              HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                              con.setRequestMethod("GET");
+                              BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+                              String inputLine;
+                              while ((inputLine = in.readLine()) != null) {
+                                System.out.println(inputLine);
+                              }
+                              in.close();
+                            } catch (IOException e) {
+                              e.printStackTrace();
+                            }
+                          }
+                        }
+                        </pre>
+                                
+                    <li><b>java.sql package:</b></li><br>This package contains classes for performing database operations, such as connecting to databases, executing SQL queries, and managing transactions.<br>
+                                <b>Example:</b><br><br>
+                                <pre class="code-block">
+                                    import java.sql.*;
+                                    
+                                    public class MyClass {
+                                      public static void main(String[] args) {
+                                        try {
+                                          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "root", "password");
+                                          Statement stmt = conn.createStatement();
+                                          ResultSet rs = stmt.executeQuery("SELECT * FROM customers");
+                                          while (rs.next()) {
+                                            System.out.println(rs.getString("name"));
+                                          }
+                                          rs.close();
+                                          stmt.close();
+                                          conn.close();
+                                        } catch (SQLException e) {
+                                          e.printStackTrace();
+                                        }
+                                      }
+                                    }
+                                    </pre>
+        </p></section>
+    <section id="User_Defined_Packages">
+ <h3 style="text-align: center; color: rgb(34, 66, 32);">User Defined Packages</h3>
+        <p >In addition to the built-in packages in Java, you can also create your own packages in order to organize your code and make it more modular and reusable. User-defined packages in Java allow you to group related classes and interfaces together and provide a unique namespace for your code to prevent naming conflicts with other packages.
+            <br><ol class="circle-list"><br>
+                    Here's an example of how to create a user-defined package in Java:<br><br>
+                    <li>Create a new folder for your package in your project directory, and give it a meaningful name that reflects the purpose of your package. For example, you might create a package called "com.example.utilities" for a set of utility classes.</li><br><br>
+                    <li>Create your classes or interfaces inside this folder, and include a "package" statement at the top of each file to specify the name of your package.</li> For example:<br><br>
+                    <pre class="code-block">
+                        package com.example.utilities;
+                        
+                        public class StringUtils {
+                            public static boolean isNullOrEmpty(String str) {
+                                return str == null || str.isEmpty();
+                            }
+                        }
+                        </pre>
+                    <li>In order to use your user-defined package in another part of your code, you need to import it using the package name.</li> For example:
+                                <pre class="code-block">
+                                import com.example.utilities.StringUtils;
+
+                                public class MyClass 
+                                    {
+                                public static void main(String[] args) 
+                                        {
+                                        String s = "Hello, world!";
+                                        if (StringUtils.isNullOrEmpty(s))
+                                            {
+                                            System.out.println("The string is null or empty.");
+                                            }
+                                        else {
+                                            System.out.println("The string is not null or empty.");
+                                            }
+                                        }
+                                    }</pre>
+                                <b>Note: </b>that the package name must match the directory structure of your package, starting with the root directory of your project. In this example, the package name is "com.example.utilities", so the corresponding directory structure would be:<br><br>
+                                <pre class="code-block1">project/
+                                src/
+                                    com/
+                                        example/
+                                                utilities/
+                                                        StringUtils.java
+                                      ...       </pre>
+                                User-defined packages in Java provide a powerful way to organize your code and make it more modular and reusable. By following the conventions for package naming and structure, you can create a well-designed and maintainable codebase that is easy to understand and extend.</p></section>
+                        </body></div>
